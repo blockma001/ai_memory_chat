@@ -4,3 +4,4 @@ openai
 langchain
 langchain-community
 jinja2
+python-multipart
