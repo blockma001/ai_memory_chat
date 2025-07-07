@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>🧠 记忆 AI 助手</title>
+</head>
+<body style="font-family: Arial, sans-serif;">
+    <h2>🧠 AI 助手 with 记忆</h2>
+
+    <div style="border: 1px solid #ccc; padding: 10px; width: 80%; margin-bottom: 20px; white-space: pre-wrap;">
+        {% for line in history %}
+            {{ line }}<br>
+        {% endfor %}
+    </div>
+
+    <form method="post" action="/chat">
+        <input type="text" name="user_input" placeholder="输入你的问题" style="width: 70%; padding: 8px;">
+        <button type="submit" style="padding: 8px;">发送</button>
+    </form>
+</body>
+</html>
